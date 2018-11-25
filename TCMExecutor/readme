@@ -1,0 +1,15 @@
+Pre-Requisites :
+
+1. Visual Studio 2012 Ultimate edition or Test Agent 2012 & Test Controller 2012 + TCM dependency files GAC'd
+2. TFS 2015 and below
+3. XAML Definitions to run Test Cases
+4. Knowledge on TFS for Testing and MTM
+5. Little bit of WIQL (Work Item Query Language)
+
+
+Description:
+
+This is a wrapper on top of TCM by Microsoft which is used to create, execute and publish test cases to TFS 2015 and below
+
+This solution could be used by developers and qa manual testers to execute automated tests of their choice without requiring to know
+MTM and TFS on Testing. Mere knowledge of Test Cases, Test Suites and Build Definitions are sufficient.
