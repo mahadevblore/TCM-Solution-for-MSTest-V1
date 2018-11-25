@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Main>
+  <CollectionURL
+  TFS_COLLECTION_NAME="TFS_COLLECTION_URL"
+  TFS_COLLECTION_NAME="TFS_COLLECTION_URL"
+  </CollectionURL>
+  <BuildDefinition 
+   Definition="BUILD_DEFINITION_NAME">
+  </BuildDefinition>
+</Main>
