@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+  <projects>
+    <TFS_PROJECT_NAME     
+          SpLog="<SPLOG_LOCATION>"
+          JsonLog="<SPLOG_JSON_LOCATION>"
+          SpLogBackUp ="<SPLUNK_LOG_BACKUP_LOCATION>"
+          JsonLogBackUp="<SPLUNK_LOG_BACKUP_JSON_LOCATION>">
+    </TFS_PROJECT_NAME>
+   
+    <!--TestPath to be used for temporary testing purpose-->
+    <TestPath
+            SpLogTest="<SPLOG_LOCATION>"
+            JsonLogTest="<SPLOG_JSON_LOCATION>"
+            SpLogBackUp ="<SPLUNK_LOG_BACKUP_LOCATION>"
+            JsonLogBackUp="<SPLUNK_LOG_BACKUP_JSON_LOCATION>">
+    </TestPath>
+  </projects>

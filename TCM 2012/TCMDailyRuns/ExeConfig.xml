@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Main>
+  <Configuration
+    Runtitle="<RUN_TITLE>"
+    RuntitleExecutor="<RUN_EXECUTOR_TITLE>"
+    Project="TFS_PROJECT_NAME"
+    PlanID="TFS_PLAN_ID"
+    ConfigurationID="TFS_CONFIGURATION_ID"
+    Collection="http://<TFS_SERVER_NAME>:<TFS_SERVER_PORT>/tfs/<TFS_COLLECTION_NAME>"
+    DropLocation="XAML_BUILD_DEFINITION_DROP_LOCATION"
+    BuildDefinition="XAML_BUILD_DEFINITION_NAME"
+    Flavor="Release"
+    Platform="Any CPU"
+    TestEnvironment="TFS_TEST_ENVIRONMENT"
+    TestSettingName="TFS_TEST_SETTINGS_NAME"
+    TestSettingsId="TFS_TEST_SETTINGS_ID"
+    Iterations="false"
+    Distribute="true"
+    Systems="<NUMBER_OF_SYSTEMS_BEING_USED>"
+    Order="ORDER_OF_THE_SYSTEM_IN_EXECUTION"
+    WaitForReRun="false"
+    SplitRun="false"
+    SkipReRun="false"/>
+</Main>
+ <!-- <Configuration
+    Project="TFS_PROJECT_NAME"
+    PlanID="168746"
+    SuiteID="180491,191234,172040"
+    PRSuiteID=""
+    ConfigurationID="78"
+    Collection="http://<TFS_SERVER_NAME>:<TFS_SERVER_PORT>/tfs/<TFS_COLLECTION_NAME>"
+    DropLocation="\\ws003dt546prd\Drops\SupportSoft_CUIT [Local Runs]\"
+    BuildDefinition="SupportSoft_CUIT [Local Runs]"
+    Flavor="Release"
+    Platform="Any CPU"
+    TestEnvironment="ws003dt546prd"
+    TestSettingName="St_CUIT"
+    TestSettingsId="42374"
+    Iterations="false"
+    Distribute="false"
+    Type="executor"
+    Systems="2"
+    Order="1"
+    WaitForReRun="false"
+    SplitRun="true"
+    ControllerSuite ="168749,178374,171030,168748,202120"
+    ExecutorSuite="180491,191234,172040"
+    SkipReRun="false"
+    ConfigScript=""
+    Runtitle="Distributed Run_"
+  >
+  </Configuration>
+</Main>-->
+<!--UserName="DOMAIN\SERVICE_ACCOUNT_NAME"
+    PassWord="SERVICE_ACCOUNT_PASSWORD"
+    RemoteMachine="\\REMOTE_MACHINE_NAME-->
+
+<!--ExecutorSuite - Use ',' as delimitor for defining suites and ':' as delimitor to split between suites to run in multiple systems
+                                                for eg., ExecutorSuite=12636,12634,12757:13265,14258,12345:23475,13451-->
+<!--ControllerSuite - Pass the suite/s with delimitor as ',' in order to run tests in the controller machine
+        ExecutorSuite - Pass the suite/s with delimitor as ',' to run tests in executor machine
+        Order is 0 based indexing
+        Type - values of type can only be controller or executor
+               Controller is for the machine which is going to collate the results
+               Executor is for the machines which is/are going to just run the tests
+               
+        Typical scenarios
+        1. Distribute is false and SuiteID is null : Entire Plan test cases will be pulled and executed
+        2. Distribute is false and SuiteID contains values : The Suite/s passed will be pulled and executed
+        3. Distribute is true, SplitRun is false and SuiteID is null : Entire plan test cases will be divided by number of systems and based on Order 
+                                                                       the test cases will be distributed evenly
+        4. Distribute is true, SplitRun is false and SuiteID is not null : The Suite/s will be pulled and test cases will be divided by number of systems and based on Order 
+                                                                           the test cases will be distributed evenly
+        5. Distribute is true, SplitRun is true (SuiteID will be ignored) : The Controller machine will pick up Suite/s passed in ControllerSuite and 
+                                                                            according to number of systems the ExecutorSuite will be split using delimitor
+                                                                            ':' and distributed among systems
+        Note: By default Controller's Order will be 0 and other respective machines will be ordered starting from 1 to (number of systems -1)-->

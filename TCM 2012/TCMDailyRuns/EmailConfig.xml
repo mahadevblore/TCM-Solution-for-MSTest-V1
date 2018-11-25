@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Email>
+  <SMTPServer IP = "<smtp ip/hostname/fqdn>"></SMTPServer>
+  <TFS_PROJECT_NAME
+		EmailAddress = "<email ids seperated by comma for 'TO' field>"
+		CCAddress = "email addressed sepereated by comma for 'CC' field"
+		MTMLink = "mtm://<TFS_SERVER_NAME>:<TFS_SERVER_PORT>/tfs/<TFS_COLLECTION_NAME>/p:<TFS_PROJECT_NAME>/Testing/testrun/open?id=">
+  </TFS_PROJECT_NAME>
+</Email>
